@@ -1,0 +1,905 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<categories>
+  <category>
+    <name>Decision Making</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>No formal processes exist. Resources applied to projects on an ad hoc or first come first served basis</characteristic>
+          <characteristic>Very little structure to decision making process</characteristic>
+          <characteristic>Decision making random rather than deliberate and co-ordinated</characteristic>
+          <characteristic>Decision making about project portfolio made by executive management only with less than optimal data</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Educate Decision Makers</theme>
+          <action>Organisation requires a timely response to innovation opportunities and make decisions</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Resources applied to projects based on availability of personnel and project importance</characteristic>
+          <characteristic>Some structure in decision process but mostly based on common language rather than a common process</characteristic>
+          <characteristic>Decision making deliberate for high risk efforts or crisis only</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Provide structure to the decision making process</theme>
+          <action>Resource decisions move from being transactional in nature.</action>
+          <action>Introduce processes for recognizing and reducing resource conflicts</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Business imperatives and insights about the workforce guides how decisions are taken .Resources allocated on a prioritisation system</characteristic>
+          <characteristic>Range of decision support tools available and decision makers know how to use them</characteristic>
+          <characteristic>Decisions driven by constrained resources or compliance issues</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Create value through effective decision making</theme>
+          <action>Integrate skills and team capabilities to perform effectively when making decisions</action>
+          <action>Decision makers use expert advice effectively</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Resources assigned to projects using a scheduling system and capacity information</characteristic>
+          <characteristic>Pervasive use of information systems support tools and collaborative working systems used by decision makers</characteristic>
+          <characteristic>Decisions are driven from the top down based on a clearly articulated strategy and guiding principles</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Support better decision making through the use of tools</theme>
+          <action>Data and analytics help drive decision making</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Decisions are made dynamically and high speed</characteristic>
+          <characteristic>Resources assigned to projects via a sophisticated resource approval plan</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Technology Management</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Technology systems and infrastructure built in an ad hoc manner</characteristic>
+          <characteristic>No formal processes for managing infrastructure or operations</characteristic>
+          <characteristic>No standard policies in place or ad hoc if they exist</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Getting the basics right</theme>
+          <action>Provide basic infrastructure systems and services</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Technology platform strategy formulated by business goals. Modular sub-systems have been defined</characteristic>
+          <characteristic>Organisation awareness exits that technology management processes are necessary</characteristic>
+          <characteristic>Dependent on tools to implement defacto processes</characteristic>
+          <characteristic>Basic management tools. No formal hardware or software policies</characteristic>
+          <characteristic>Technology infrastructure decisions guided by architectural design standards to ensure that the technology platform meets</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Having the techmolgy platform to support innovation</theme>
+          <action>Improve innovation solution delivery</action>
+          <action>Ensure enterprise technical architecture supports innovation initiatives</action>
+          <action>Provide formal technology infrastructure standards and policies</action>
+          <action>Proactively promote new technologies to positively impact innovation strategy</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Technology platform strategy formulated by business goals. Modular sub-systems have been defined</characteristic>
+          <characteristic>Organisation awareness exits that technology management processes are necessary</characteristic>
+          <characteristic>Dependent on tools to implement defacto processes</characteristic>
+          <characteristic>Basic management tools</characteristic>
+          <characteristic>No formal hardware or software policies</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Using technolgy to enhance innovation capability</theme>
+          <action>Stabilise operations and support</action>
+          <action>Establish standard infrastructure</action>
+          <action>Improve solution delivery</action>
+          <action>Establish enterprise architecture</action>
+          <action>Converge business and IT</action>
+          <action>Expand and extend infrastructure to involve partners</action>
+          <action>Provide formal technology infrastructure standards and policies</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Organisation has ability to quickly leverage technology and competencies into new markets</characteristic>
+          <characteristic>Repeatable and individually automated focus on service delivery related processes</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Flexibility and agility are bywords</theme>
+          <action>New technologies proactively promoted to positively impact business</action>
+          <action>Real time infrastructure standards and policies</action>
+          <action>Enable technology infrastructure to be flexible and agile to respond to business needs</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>High levels of asset reuse are achieved across platforms with continuous and planned platform renewal processes</characteristic>
+          <characteristic>Proactively promoting new technologies to positively impact the business</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Leadership</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Innovation strategy absent or unclear with leaders disengaged</characteristic>
+          <characteristic>Entreprenurial environment with little structure and future dependent on few individuals</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Building leadership skills</theme>
+          <action>Management needs to recognize requirement to build leadership skills</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Importance of innovation recognised by leadership team but innovation strategy insufficiently developed</characteristic>
+          <characteristic>Recognised need for structure and leadership. Success dependent on one or two key executives</characteristic>
+          <characteristic>Business success dependent on one or two key executives</characteristic>
+          <characteristic>Executive support for innovation is in the background as evident through funding authorization and resource allocation, but active and visible sponsorship is not present</characteristic>
+        </characteristics>
+        <actions>
+          <action>Management recognizes need to develop consistent leadership capabilities throughout organisation.</action>
+          <action>Leadership must make sure the structure of the organisation is aligned with the goals of the organisation</action>
+          <action>Build disciplined work unit management practices to stabilize work and control commitments</action>
+          <action>Ensure that leaders at all levels recognize employees for achieving innovation goals anddemonstrating the right behaviors</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Leadership endorses innovation projects with supporting tools</characteristic>
+          <characteristic>Organisation wide acceptance of innovation strategy and innovation strategy well defined</characteristic>
+          <characteristic>Leadership demonstrated and rewarded at various levels of organisation conforming with business innovation needs</characteristic>
+          <characteristic>Leaders are aware of the need to invest time and resources to make the company become more innovative</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Getting everyone involved</theme>
+          <action>Effective leadership tools and techniques need to be implemented</action>
+          <action>Management to ensure the innovation portfolio is well funded and to monitor innovation project outcomes proactively</action>
+          <action>Provide a network of project management leaders for managing innovation projects and project outcomes on a consistent</action>
+          <action>Signal a commitment to innovation from top leadership</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Curiosity is embraced resulting in new ways of working and new sources of inspiration</characteristic>
+          <characteristic>Effective leadership demonstrated and replicated throughout the organisation ensuring consistent performance across the organisation</characteristic>
+          <characteristic>Active top management sponsorship in the form of personal involvement, guidance and inspiration for the respective innovation teams</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Achieving consistent performance</theme>
+          <action>Implement continuous proactive improvements to achieve business goals for innovation</action>
+          <action>Team compositions to change and adapt for each new innovation initiative and work structured in such a way it is done correctly</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Leaders drive innovation priority and accountability</characteristic>
+          <characteristic>Leaders and employees fully engage in a continuous dialogue based on a team-based culture</characteristic>
+          <characteristic>Proven leadership practices which have shown cross industry success in delivering predictable and sustainable organisational results</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Performance Metrics</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Metrics are primitive and unreliable</characteristic>
+          <characteristic>No data or only ad hoc performance measures are collected</characteristic>
+          <characteristic>Metrics unexplored</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Introduce metrics</theme>
+          <action>Educate staff about the use of performance metrics</action>
+          <action>Incorporate measurement and accountability into individual and team roles for innovation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Performance metrics are established but not consistently monitored or acted upon</characteristic>
+          <characteristic>Performance data is collected routinely but are mostly operationally focused</characteristic>
+          <characteristic>Innovation strategy and metrics are not clearly defined and communicate</characteristic>
+          <characteristic>Some facts and data is available but its collection and usage is ad hoc, sporadic and un-cordi</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Using standard metrics to improve performance</theme>
+          <action>Develop standard processes and measures</action>
+          <action>Use insights from data collected to standardize performance measurement within the organisation</action>
+          <action>Redesign core operating performance metrics to improve organisational efficiency and effectiveness</action>
+          <action>Establish metrics and key performance indicators to monitor performance to ensure that innovation project goals are met and aligned to business strategy</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Strategic performance measures are collected covering most strategic objectives</characteristic>
+          <characteristic>Goals and metrics related to innovation system established</characteristic>
+          <characteristic>Metrics defined and communicate</characteristic>
+          <characteristic>Standardised performance metrics used across the organisation based on an agreed framework.</characteristic>
+          <characteristic>Ad hoc rewards tied to analytics-based metrics</characteristic>
+          <characteristic>Performance data used in a co-ordinated fashion to gain new insights that improves operational decision making</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Using metrics to create value for the enterprise</theme>
+          <action>Management must put in place a system of measures and rewards that ensure strategy is executed</action>
+          <action>Communicate thinking about the usefulness and value of performance metrics across the organisation</action>
+          <action>Use performance metrics and measurement to create value for the enterprise</action>
+          <action>Manage processes and results quantitativelyand exploit benefits of standardisation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Strategic measures are broadly used to improve focus and performance and inform budget decisions</characteristic>
+          <characteristic>Idea metrics adopted and used to improve innovation performance</characteristic>
+          <characteristic>Innovation process managers and gatekeepers have clear direction, metrics and ownership</characteristic>
+          <characteristic>Innovation project metrics expanded to include resource capacity and strategic alignment</characteristic>
+          <characteristic>Performance data used in a co-ordinated fashion to gain new insights that improves strategic decision making</characteristic>
+          <characteristic>Innovation metrics provide strategic direction for innovation activities, guide allocation resources and improve innovation performance</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Using insights gained derived from performance metrics</theme>
+          <action>Management to ensure KPI’s truly reflect and measure the critical performance factors that contribute to success</action>
+          <action>Launch an organisational dashboard to ensure all innovation activities are aligned to the strategic plan</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Measurements are comprehensively used and routinely revised based on a continuous improvement</characteristic>
+          <characteristic>Innovation portfolio metrics evolved to include competitive and environmental impact scores</characteristic>
+          <characteristic>Self-service configurable reports and metrics delivered across the</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>IP Management</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>All activity is ad hoc and predominantly event driven. No formal processes exist. IP not managed</characteristic>
+          <characteristic>Managing the IP portfolio in a spreadsheet or filing cabinet. Rely on outside counsel for portfolio questions</characteristic>
+          <characteristic>There is no executive interest in the monetisation of IP and no resources to formally manage the process</characteristic>
+          <characteristic>No formal processes exist and IP not managed</characteristic>
+          <characteristic>Rely on outside counsel for portfolio questions</characteristic>
+        </characteristics>
+        <actions>
+          <theme>The need for IP Management is recognised</theme>
+          <action>Build IP awareness</action>
+          <action>Create a formal IP portfolio to be managed professionally</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Simple IP portfolio tacking. There is a basic IP management process</characteristic>
+          <characteristic>Beginning to build IP awareness and collaborative workflows</characteristic>
+          <characteristic>Portfolio broken down into key subject areas and related to business use</characteristic>
+          <characteristic>A basic license management workflow is in place</characteristic>
+        </characteristics>
+        <actions>
+          <theme>IP is recognised as a coporate asset</theme>
+          <action>Analyise and categorise IP portfolio to enable it to be easily understood and managed</action>
+          <action>There is a basic IP management process</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>IP portfolio related to business use. IP awareness built across the organisation</characteristic>
+          <characteristic>IP portfolio management is part of, and in alignment with overall corporate business strategy.</characteristic>
+          <characteristic>The portfolio is actively pruned and maintained</characteristic>
+          <characteristic>IP creation and investments align with the business’s overall strategy for competing effectively in the marketplace</characteristic>
+          <characteristic>Competitive IP intelligence is utilized to set and monitor progress versus key competitor</characteristic>
+          <characteristic>The IP portfolio is viewed as a clear set of assets with patents valued based on business use</characteristic>
+        </characteristics>
+        <actions>
+          <action>Use IP portfolio management function to contribute to business strategy development</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>IP management aligned to business strategy. Ongoing analysis of complete IP.</characteristic>
+          <characteristic>IP assets are licensed or monetised based on strategic business drivers related</characteristic>
+          <characteristic>Proactive risk mitigation for IP is formally managed and involves external relationships</characteristic>
+        </characteristics>
+        <actions>
+          <theme>IP Management is aligned with corporate strategy</theme>
+          <action>IP portfolio used to influence and align with external parties from a strategic perspective</action>
+          <action>Align IP creation and investments with the business’s overall strategy for competing effectively in the marketplace</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>IP portfolio manged for competitive advantage based on industry dynamics</characteristic>
+          <characteristic>Competitive intelligence is used to help direct key efforts in managing outside relationships and external forces in relation to IP</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Rewards and Recognition</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Incentives and rewards program not established or rewards program not designed or not meaningful</characteristic>
+          <characteristic>No formal processes exist. Ad hoc practices used to identify candidates for vacant positions</characteristic>
+          <characteristic>Ad hoc practices used to identify candidates for vacant positions</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Introducing some standard processes</theme>
+          <action>Initial rewards and incentive program to be developed</action>
+          <action>Formalise recruitment processes</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Compensation and rewards often not correlated to performance and value contribution</characteristic>
+          <characteristic>Recognition practices and criteria varied across the business and applied in an inconsistent manner</characteristic>
+          <characteristic>The loosening of control over who has to approve employee recognition which encourages employees own recognition more</characteristic>
+          <characteristic>Transactional recruitment. Reactive and overly reliant on agencies. Candidates sourced on an as needed basis</characteristic>
+          <characteristic>Recruitment reactive and overly reliant onagencies. With candidates being sourced on an as needed basis</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Transparency is the key to better performance</theme>
+          <action>Recognition practices and criteria across the business to be standardized</action>
+          <action>Incentive program processes to be transparent and visible</action>
+          <action>Ensure that leaders at all levels recognize employees for achieving goals and demonstrating the right behaviors</action>
+          <action>Introduce and heavily promote peer to peer recognition</action>
+          <action>Recruiters have an effective assessment framework for hiring</action>
+          <action>Organisations begin to manage their employment brand and value proposition for candidates</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Employees aware of the incentives and how the reward is achieved. Payments aligned to strategies</characteristic>
+          <characteristic>The development of a consistent approach to recognition across the organisation with some use of technology to make recognition easier to do and track</characteristic>
+          <characteristic>Senior leaders communicate the behaviour they expect and the goals of the organisation and then publicly recognise employees for achievement of them</characteristic>
+          <characteristic>Many employees receive recognition that includes specific feedback</characteristic>
+          <characteristic>Basic understanding of employee value porpoistion. Internal capabilities focus on passive talent</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Using different approaches to achieve the desired result</theme>
+          <action>An array of different types of recognition methods developed and specific feedback programs put in place</action>
+          <action>Talent acquisition function fully integrated with HR function.</action>
+          <action>Introduce effective media campaigns and powerful employment brands</action>
+          <action>Management must put in place a system of measures and rewards that ensure strategy is executed</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Incentives and rewards program carefully considered. Based on goals and plans and external benchmarks</characteristic>
+          <characteristic>Organisations have taken a thoughtful approach to employee recognition and have developed a recognition strategy</characteristic>
+          <characteristic>Established metrics and bencmarks. Targeted engagement to attract highly qualified candidates</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Rewards and regonigtion messages are used to drive chosen strategic results</theme>
+          <action>Recognition used to strategically reinforce key messages goals and behaviors across the entire organisation.</action>
+          <action>Talent acquisition function considered to be a strategic enabler</action>
+          <action>Align incentives to support collaborative innovation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Enterprise wide approach to recognising goals and behaviour. Recognition is a natural instinct within the organisation</characteristic>
+          <characteristic>Recognition is a natural instinct within the organisation with senior leaders setting the example</characteristic>
+          <characteristic>Data driven decision making. Target segmentation and prioritisation of candidates</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Team Dynamics</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Culture is risk averse, overly stressful, lacking trust and closed to new ideas</characteristic>
+          <characteristic>Culture unadressed</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Recognising the importance culture plays in innovation</theme>
+          <action>Provide recognition of the pivotal roles organisation and culture play in innovation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Culture recognises new ideas but lacking systems to take them forward</characteristic>
+          <characteristic>Culture is about politics and bureaucracy which stifles innovation</characteristic>
+          <characteristic>Some teams and business units have adopted innovative practices but these do not extend to the rest of the company</characteristic>
+          <characteristic>Management understand how culture influences decisions</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Leadership is essential for culture development</theme>
+          <action>Publish vision and values to be lived</action>
+          <action>Management ensures involvement from all levels of the organisation to make innovation initiatives successful</action>
+          <action>Establish clear roles for process managers, project managers, resource managers and innovation gatekeepers</action>
+          <action>Open input and idea generation is encouraged for all employees</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Team culture supports risk taking and new ideas are documented</characteristic>
+          <characteristic>Teams are able to address innovation opportunities and challenges, generate ideas and insights and shape them into strong concepts with strategic value for the company</characteristic>
+          <characteristic>Key innovation roles within the organisation developed and communicated</characteristic>
+          <characteristic>Cross functional groups are easily formed and collaboration is the norm</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Collabaration necessary for culture to work</theme>
+          <action>Improve collaboration and knowledge sharing as it relates to innovation</action>
+          <action>Encourage the corporate-wide acceptance of a culture that supports empowerment and self-organizing guided by a set of protocols</action>
+          <action>Individual and team autonomy is a key component for a successful innovation culture</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Culture encourages risk taking and trust issues are confronted</characteristic>
+          <characteristic>Teams are motivated and able to engage in collaborative innovation addressing challenging problems and providing value based strategic solutions</characteristic>
+          <characteristic>Tools such as user profiling(activity stream analysis) guided persuasion(tunneling and suggestion techniques) and social dynamics technology(conversation agents) are in use</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Innovation culture leads to success</theme>
+          <action>Innovation culture requires strong leaders with great relationship building and communication skills to embed the right behaviours and values for success</action>
+          <action>Develop a culture that supports, nutures and develops innovation in a systematic way</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Innovation is embraced and fully supported and energised by the culture</characteristic>
+          <characteristic>Innovation embedded in company culture across all functions</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Information Management</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Business managers and the IT organisation do not know that information is a problem, while users mistrust data.</characteristic>
+          <characteristic>The organisation makes strategic decisions without adequate information</characteristic>
+          <characteristic>No formal information architecture contains the principles, requirements and models to guide teams on how to share enterprise information</characteristic>
+          <characteristic>There is no information governance, security or accountability of key information assets</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Starting to use information fo innovation activities</theme>
+          <action>Educate IT and business leaders about the use of information as an asset</action>
+          <action>Draft strategies to align information management with other initiatives</action>
+          <action>Apply management controls to ensure required information is collected</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Business units realize the value of information and share it on cross functional projects</characteristic>
+          <characteristic>The organisation only addresses the issue of data quality when problems become apparent</characteristic>
+          <characteristic>Metrics focus on expiration dates for information, files and other electronic forms to address known compliance risks</characteristic>
+          <characteristic>There is no enterprise wide content management strategy</characteristic>
+          <characteristic>Some reports or dashboards have useful information</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Collecting information to drive innovation initiatives</theme>
+          <action>Top management asserts the need for information management</action>
+          <action>Use business units to identify opportunities to improve information management</action>
+          <action>Develop integrated processes for information collection</action>
+          <action>Implement policies and procedures to manage and protect core information throughout its life in the organisation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>The organisation sets standards for information management technologies.</characteristic>
+          <characteristic>Governance councils and a formal data-quality program, with assigned data stewards, help manage information as an asset. Key business units participate actively</characteristic>
+          <characteristic>The organisation enforces guidelines for archiving data and retention periods. It collects and organizes metadata for reuse</characteristic>
+          <characteristic>aaakey business units participate actively</characteristic>
+          <characteristic>information is exchanged across the organisation to support the enterprise business strategy</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Information guides value based innovation initiatives</theme>
+          <action>Provide an inventory of departmental information management activities and resources</action>
+          <action>Create a balanced scorecard for information management</action>
+          <action>An organisation wide database is used to collect data and processes are well defined for evaluating new innovation initiatives</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Senior management recognizes information as a strategic asset and funds</characteristic>
+          <characteristic>Policies and mandates are documented and understood</characteristic>
+          <characteristic>The organisation defines policies and standards to achieve consistency</characteristic>
+          <characteristic>The organisation manages metadata and resolves semantic inconsistencies to support reuse and transparency</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Commitment to process ensures success</theme>
+          <action>Establish barriers to guard against complacency</action>
+          <action>Information management processes help define the kind of innovation that drives growth and helps meet strategic objectives</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Senior management sees information as a competitive advantage and exploits it to create value and increase efficiency</characteristic>
+          <characteristic>The organisation has achieved five EIM goals: (1) integrated master data domains; (2) seamless information flows; (3) metadata management and semantic reconciliation; (4) data integration across the IT portfolio; and (5) unified content</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Projects and Control</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Project leadership is focused only on the “concrete” or tangible aspects of the project including funding, schedule, issue tracking and resource management</characteristic>
+          <characteristic>Communications from the project are on a ‘need to know’ basis only and typically infrequent</characteristic>
+          <characteristic>Executive support is in the background as evident through funding authorization and resource allocation, but active and visible sponsorship is not present</characteristic>
+          <characteristic>The organisation recognises projects but runs them differently to their on-going business. Projects run informally with no standard process or tracking system.</characteristic>
+          <characteristic>Internal processes centred on managing critical projects-all else is on available schedule.</characteristic>
+          <characteristic>Sporadic use of project management .Formal documentation and the knowledge of the standards of project management is lacking</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Getting the basics right</theme>
+          <action>Understand and establish basic project management practices</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>A large variation of change management practices exists between projects with many different change management approaches applied sporadically throughout the organisation</characteristic>
+          <characteristic>The concept of disciplined teams working on a project is developed. Roles, responsibilities and competencies defined in some areas but not consistently across the business.</characteristic>
+          <characteristic>The organisation ensures that each project is run with its own processes and procedures to a specified minimum standard.</characteristic>
+          <characteristic>Project status and delivery available to management at defined points.</characteristic>
+          <characteristic>Concepts of project management grasped by the organisation. Standard schedule update process but with limited implication analysis</characteristic>
+          <characteristic>A formally approve project management methodology has been launched. Basic processes are followed in a limited manner, not standardised across all projects</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Making good investment decisions important</theme>
+          <action>Introduce project planning</action>
+          <action>Introduce standard and consistent project management practices for project management to ensure alignment with strategy</action>
+          <action>Focus first on helping the organisation make well informed investment choices. (This will improve the odds of project success more than any other factor)</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Structured change management processes are being used across multiple projects; multiple approaches and methodologies are being utilized</characteristic>
+          <characteristic>Some elements of knowledge sharing emerge between teams in the organisation; experiences are shared between teams in some departments or divisions</characteristic>
+          <characteristic>A need for an integrated approach to project management emerges. Training and tools become available to project leaders and team members to aid transparent decision making</characteristic>
+          <characteristic>The organisation has its own centrally controlled processes. Individual projects can flex within these processes to suit that project</characteristic>
+          <characteristic>A project methodology is developed approved and used. Project managers are informed about project management standards. Most projects are implemented using these standards. Management supports the use of standards</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Use structured planning and control systems</theme>
+          <action>Adopt systematic and structured project planning and control mechanisms for individual projects</action>
+          <action>Provide centres of competency to improve workload management</action>
+          <action>Provide centrally controlled processes so that Individual projects can flex within these processes to suit that project</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>A network of project management leaders exists company-wide project management skills have been developed internally.</characteristic>
+          <characteristic>The project portfolio is modelled and optimised factoring in risk. Business process focus is on lean least expensive options for accomplishing goals</characteristic>
+          <characteristic>Standard schedule update process but with quality milestone and exit criteria.</characteristic>
+          <characteristic>Value and benefit realisation is being tracked.</characteristic>
+          <characteristic>Executives assume the role of change sponsors on every new project and are active and visible sponsors of change</characteristic>
+          <characteristic>An integrated project life cycle methodology is used. Application of the standard set is monitored and fixed for all projects</characteristic>
+          <characteristic>Projects support the project plan</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Focus on financial performance</theme>
+          <action>Innovative ideas used to improve performance</action>
+          <action>Business process focus is on lean least expensive options for accomplishing goals</action>
+          <action>Provide standard schedule update process but with quality milestone and exit criteria</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Team compositions change and adapt for each new initiative. Work structured in such a way it is done correctly</characteristic>
+          <characteristic>Strategic and tactical value of projects taken into account when making financial decisions</characteristic>
+          <characteristic>Portfolios exist for all project work throughout the organisation.</characteristic>
+          <characteristic>The organisation undertakes continuous process improvement practices in order to optimise performance</characteristic>
+          <characteristic>A regular analysis and renewal of the existing project management methodology is conducted. Lessons learnt files are created. Knowledge management and transfer processes are standardised and followed. Processes are in place to improve project performance.</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Risk Management</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>No understanding of risk management principles or language Lip service to risk management</characteristic>
+          <characteristic>Virtually no executive-level support</characteristic>
+          <characteristic>Small “pockets” of interest</characteristic>
+          <characteristic>No attempt to recognize the benefits of risk management</characteristic>
+          <characteristic>No investment in risk management training and education</characteristic>
+          <characteristic>Reactive to risk events, used to fire-fight</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Moving towards a more disciplined process</theme>
+          <action>initial training and education in project risk management</action>
+          <action>Undertake awareness briefings to sell the vision of risk management and its potential benefits to the senior management</action>
+          <action>Identify and use appropriate project risk management templates and historical risk data</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Recognition of benefits of risk management</characteristic>
+          <characteristic>organisational support at project levels</characteristic>
+          <characteristic>Some initial recognition of need for RM processes/ methodologies</characteristic>
+          <characteristic>Some risk management training</characteristic>
+          <characteristic>Experimenting on some aspects of risk management process and tools applications</characteristic>
+          <characteristic>Certain business drivers identified and tactical priorities set</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Developing a formal Risk Management process and standard</theme>
+          <action>Provide formal tiered risk management training to developi n-house expertise and process knowledge</action>
+          <action>Formalize the chosen risk management systems and processes</action>
+          <action>Develop a culture that supports both the behavioral and quantitative sides of risk management</action>
+          <action>Assessing and managing risk both qualitatively and quantitatively</action>
+          <action>Plan, prioritize, mobilize and track risk management activities</action>
+          <action>Identif yproactively common known risk sources and reduce risks systematically</action>
+          <action>Effective learning from experience</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Integrated RM processes defined</characteristic>
+          <characteristic>Management support to a RM formal system</characteristic>
+          <characteristic>Return on investment for risk management training dollars</characteristic>
+          <characteristic>Proactive behaviour to risk and threats</characteristic>
+          <characteristic>Lessons learned from past project projects</characteristic>
+          <characteristic>Effective management of known/predictable risks Still mainly inward looking within the project and functional levels.</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Enabling a predictable networked process</theme>
+          <action>Have keys suppliers and customers involved in both PM and RM processes</action>
+          <action>Develop a fully RM culture and appointment of a risk manager</action>
+          <action>Manage emergent risk through high risk awareness and quick response</action>
+          <action>Assess the project structure and instill robustness to cope with emergent risks</action>
+          <action>Facilite double-loop learning.</action>
+          <action>Align expectations about innovation to organisation's risk tolerance</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Appointment of a risk manager-formal or informal</characteristic>
+          <characteristic>Risk sharing with other parties</characteristic>
+          <characteristic>Institutional arrangements (coalition building, contractual, legal arrangements)</characteristic>
+          <characteristic>Networked or leveraged risk management capability &amp; Network innovation capability</characteristic>
+          <characteristic>More focus on dealing with front-end engineering &amp; planning</characteristic>
+          <characteristic>High risk-awareness</characteristic>
+          <characteristic>Capable of managing almost all predictable risks, and manage some emergent risks</characteristic>
+          <characteristic>Institutionalized risk management process</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Continually improving and optimising process</theme>
+          <action>Ensure continued commitment and active involvement of senior management</action>
+          <action>Encourage the corporate-wide acceptance of a culture that supports empowerment and self-organizing guided by a setof protocols</action>
+          <action>Continue to involve lead customers ands uppliers in the sharedrisk process</action>
+          <action>Develop societal network and community relations</action>
+          <action>Continuously improve multiple capability in organisation,PM &amp; RMprocesses, software tools and technology applications</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>Cross-organisational and cross- project risk management collaboration and multi-learning</characteristic>
+          <characteristic>Involvement of affected parties &amp; internal stakeholders in the risk management process</characteristic>
+          <characteristic>Strategic business risk planning</characteristic>
+          <characteristic>Develop strategic alliances, institutional arrangements and partnering with external stakeholders</characteristic>
+          <characteristic>Ability to manage both known risk and emergent risk.</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Analytics and Research</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>There is no defined analytics strategy or vision. All development activities undertaken in respect of innovation is accidental</characteristic>
+          <characteristic>The application of analytical insight is the choice of the individual and has little effect on how the organisation operates</characteristic>
+          <characteristic>Some individuals use analytics in an ad hoc manner for diagnostics purposed</characteristic>
+          <characteristic>The organisation does not have an analytics or research capability</characteristic>
+          <characteristic>Analytics and research programs not standardised or linked to business needs</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Introduce an analytics and research programme</theme>
+          <action>Additional investment in technology needs to accompany analytics adoption</action>
+          <action>Educate staff about the use of analytics and research to improve the creation of new ideas and opportunities for innovation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>There is no articulated analytics strategy but analytics is used to help inform decision makers on some innovation matters</characteristic>
+          <characteristic>Reporting and analytics starting to be shared organisation wide and built manually</characteristic>
+          <characteristic>Analytics not completely integrated into other organisational processes and used in parts of the organisation but not across the entire organisation</characteristic>
+          <characteristic>The capability to undertake effective analytics and research exists but is poorly developed</characteristic>
+          <characteristic>Weak to moderate business ownership of the requirement for performance metrics</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Use analytics to fuel innovasation programmes</theme>
+          <action>Communicate thinking about the usefulness and value of analytics and research across the organisation</action>
+          <action>Ensure that business analytics are used to achieve the business alignment of innovation projects goals and objectives</action>
+          <action>Leaders to encourage the use of analytics in framing innovation initiatives</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>The business strategy encourages the use of insight from the data collected</characteristic>
+          <characteristic>The business is able to make business decisions using analytical insight to improve innovation effective ness and create business value</characteristic>
+          <characteristic>Analytic processes used routinely to deliver analytical information to other organisational processes.</characteristic>
+          <characteristic>Extensive use of analytics throughout the organisation with analytics driving value in organisational silos</characteristic>
+          <characteristic>The capability to develop effective analytics and research is well developed but there is room for improvement</characteristic>
+          <characteristic>Business relevance of every performance metric validated</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Harness the data to create insight</theme>
+          <action>Unlock significant value by making information made available by analytics and research transparent and usable across the organisation</action>
+          <action>Use insights from data collected to refine innovation strategies within the organisation</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Predictive analytics is used to help optimise an organisation’s decision making so that the best actions are taken to maximise business value for innovation initiatives</characteristic>
+          <characteristic>Project level reporting and analytics are available and modifiable</characteristic>
+          <characteristic>Analytics and research accepted as part of the culture of the organisation</characteristic>
+        </characteristics>
+        <actions>
+          <theme>A culture of using analytics creates value</theme>
+          <action>Incorporate analytics and research practices into the design of all core processes</action>
+          <action>Use the analytics capability of the organisation to create value and sustainable competitive advantage</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic>A well-defined enterprise level analytics strategy supports innovation initiatives</characteristic>
+          <characteristic>Sophisticated analytic processes are established and integrated with all key organisation processes and decisions</characteristic>
+          <characteristic>Analytics and research practices incorporate into the design and measurement of all core processes with direct relationship to business outcomes</characteristic>
+          <characteristic>The analytics and research capability of the organisation creates value and sustainable competitive advantage for the organisation</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+  <category>
+    <name>Idea Mangement</name>
+    <levels>
+      <level>
+        <name>Ad-Hoc</name>
+        <characteristics>
+          <characteristic>Processes surrounding ideation and concept development do not exist</characteristic>
+          <characteristic>The ability to capture and harness innovative ideas is non-existent</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Finding a capturing new ideas</theme>
+          <action>Develop an idea finding program</action>
+          <action>Ideas are captured and logged for future consideration</action>
+          <action>Proactively promote new ideas to positively impact the business</action>
+          <action>Use innovation workshops with all stakeholders to be the ideas generator for the company</action>
+        </actions>
+      </level>
+      <level>
+        <name>Repeatable</name>
+        <characteristics>
+          <characteristic>Great ideas may for example produced from brainstorming sessions but there are no processes in place to make sure the ideas are assessed and evaluated.</characteristic>
+          <characteristic>Good ideas applied in an inconsistent and undisciplined manner</characteristic>
+          <characteristic>Informal process for innovation and idea flow, some templates in use</characteristic>
+          <characteristic>Ideation centralised but organisation is not using a systematic tool or method for idea capture and idea development</characteristic>
+          <characteristic>The ability to capture and harness innovative ideas is minimal</characteristic>
+          <characteristic>Weak to moderate business ownership of the requirement for idea management</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Developing ideas in a strctured fashion</theme>
+          <action>Choose an idea management system and build related processes to ensure a centralized database is established</action>
+          <action>Create a standard process for capturing and logging ideas for future consideration</action>
+          <action>Management to take an active role in opportunity and idea identification and review</action>
+          <action>Identify the needed stakeholders to determine which approach makes the most sense for developing new ideas</action>
+          <action>Embrace new technologies that can increase the flow of ideas form internal and external sources</action>
+        </actions>
+      </level>
+      <level>
+        <name>Defined</name>
+        <characteristics>
+          <characteristic>Idea management tools are deployed to track and monitor idea status throughout the innovation process</characteristic>
+          <characteristic>The ability to capture and harness innovative ideas is marginal</characteristic>
+          <characteristic>There is broad participation in opportunity and idea identification</characteristic>
+          <characteristic>Increasingly sophisticated techniques are used to unearth unmet needs and develop market-winning solutions</characteristic>
+          <characteristic>There is continuous research and investment in new tools and techniques to enhance ideation and other innovation competencies</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Leveraging ideas for profit</theme>
+          <action>Choose an idea management platform to capture and harness innovative ideas</action>
+          <action>Ensure an idea and concept review process is in place as part of the innovation process</action>
+          <action>Look for ways to leverage ideas internally to foster innovation throughout the organisation</action>
+          <action>Use cross functional teams, brainstorming sessions and external feedback to develop ideas for the innovation strategy</action>
+        </actions>
+      </level>
+      <level>
+        <name>Managed</name>
+        <characteristics>
+          <characteristic>Idea management practices deployed throughout the organisation</characteristic>
+          <characteristic>Idea management software implemented</characteristic>
+          <characteristic>The ability to capture and harness innovative ideas is well established</characteristic>
+          <characteristic>A systematic approach to idea management is embedded in the enterprise culture-advanced tools and processes are used</characteristic>
+        </characteristics>
+        <actions>
+          <theme>Making sure idea management works</theme>
+          <action>Integrate idea management into the organisations overall collaboration effort using online tools</action>
+          <action>Ensure that collaborative idea management actually meets strategic innovation goals</action>
+        </actions>
+      </level>
+      <level>
+        <name>Optimising</name>
+        <characteristics>
+          <characteristic> The ability to capture and harness innovative ideas is effective and sustainable</characteristic>
+        </characteristics>
+        <actions> </actions>
+      </level>
+    </levels>
+  </category>
+</categories>
