@@ -25,6 +25,7 @@ public class Question {
     private double sd;
     private boolean inWeakestCategory;
     private static final Question[] questions = new Question[40];
+    private ArrayList<Integer> answers = new ArrayList<>();
 
     public Question(String text, int number, Category category) {
         this.text = text;
@@ -42,7 +43,7 @@ public class Question {
     public void setInWeakestCategory(boolean inWeakestCategory) {
         this.inWeakestCategory = inWeakestCategory;
     }
-    
+
     public void setScore(double score) {
         this.score = score;
     }
@@ -68,6 +69,20 @@ public class Question {
     }
 
     public double getSd() {
+        if (answers.size() < 2) {
+            return 0;
+        }
+        double sum = 0;
+        for (Integer answer : answers) {
+            sum += answer;
+        }
+        double mean = sum / answers.size();
+        double sumVarianceSquared = 0;
+        for (Integer answer : answers) {
+            double diff = mean - answer;
+            sumVarianceSquared += diff * diff;
+        }
+        sd = Math.sqrt(sumVarianceSquared) / (answers.size() - 1);
         return sd;
     }
 
@@ -148,6 +163,15 @@ public class Question {
         category = Category.getCategory(index++);
         question = new Question("Are appropriate project management techniques utilised?", 7, category);
         question = new Question("Are the effects of projects understood?", 20, category);
+    }
+
+    public void addAnswer(Integer a) {
+        answers.add(a);
+        score = 0;
+        for (Integer answer : answers) {
+            score += answer;
+        }
+        score = score / answers.size();
     }
 
     public static void main(String[] args) throws FileNotFoundException, IOException {

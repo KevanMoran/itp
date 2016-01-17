@@ -60,6 +60,7 @@ public class Scatter {
         for (Triangle triangle : triangles) {
             double score = triangle.getScore();
             double sd = triangle.getSD();
+            System.out.println("Score " + score + " minScore " + minScore);
             if (score < minScore) {
                 minScore = score;
             }
@@ -72,6 +73,12 @@ public class Scatter {
             if (sd > maxSD) {
                 maxSD = sd;
             }
+        }
+        if (minSD == maxSD) {
+            maxSD +=1;
+        }
+        if (minScore == maxScore) {
+            maxScore += 1;
         }
         double scoreRange = maxScore - minScore;
         double sdRange = maxSD - minSD;
@@ -105,12 +112,21 @@ public class Scatter {
         //System.out.println("margin = " + margin + " minScore = " + minScore + " scoreScale = " + scoreScale + " maxScore = " + maxScore);
 
         for (int i = 0; i < triangles.size(); i++) {
-            
+
             Triangle t = triangles.get(i);
-            t.draw(g2d);
+            if (!t.getQuestion().isInWeakestCategory()) {
+                t.draw(g2d);
+            }
             //System.out.println(i + " " + t.getSD() + " " + t.getScore());
         }
-        
+        for (int i = 0; i < triangles.size(); i++) {
+
+            Triangle t = triangles.get(i);
+            if (t.getQuestion().isInWeakestCategory()) {
+                t.draw(g2d);
+            }
+            //System.out.println(i + " " + t.getSD() + " " + t.getScore());
+        }
         int sdStartX = (int) Math.round(margin / 2);
         int sdY = (int) Math.round(size - margin / 2);
         int sdEndX = (int) Math.round(size - margin / 2);
@@ -137,22 +153,22 @@ public class Scatter {
             if (tick > minScore) {
                 int tickLeft = (int) Math.round(margin / 2);
                 int tickRight = (int) Math.round(margin);
-                int tickY = (int) Math.round(scoreStartY - margin / 2 - scoreScale * (tick - 1));
+                int tickY = (int) Math.round(scoreStartY - margin / 2 - scoreScale * (tick - minScore));
                 DecimalFormat decimalFormat = new DecimalFormat("0.0");
                 String label = decimalFormat.format(tick);
                 //System.out.println("tick " + label + " tickY " + tickY);
                 g2d.drawLine(tickLeft, tickY, tickRight, tickY);
-                g2d.drawString(label, (int)(margin / 5), tickY);
+                g2d.drawString(label, (int) (margin / 5), tickY);
 
             }
         }
-        g2d.drawString("Standard Deviation", (int)(sdStartX + sdEndX / 2 ), (int)( size ));
+        g2d.drawString("Consensus vs Non-Consensus", (int) (sdStartX + sdEndX / 3), (int) (size));
         AffineTransform affineTransform = new AffineTransform();
-        affineTransform.rotate(- Math.PI / 2);
+        affineTransform.rotate(-Math.PI / 2);
         Font font = g2d.getFont();
         Font rotated = font.deriveFont(affineTransform);
         g2d.setFont(rotated);
-        g2d.drawString("Score", (int)(margin / 6), (int)(size / 2 ));        
+        g2d.drawString("Agreggate Survey Result", (int) (margin / 6), (int) (size / 2));
         ImageIO.write(bi, "JPEG", new File(fileName));
     }
 }

@@ -42,7 +42,7 @@ public class Category implements Comparable {
     }
 
     public void addQuestion(Question question) {
-        System.out.println("Adding " + question + " to " + this);
+        //System.out.println("Adding " + question + " to " + this);
         questions.add(question);
     }
 
@@ -70,7 +70,7 @@ public class Category implements Comparable {
         for (Question question : questions) {
             question.setInWeakestCategory(true);
         }
-        
+        System.out.println("Setting " + name + " as weakest category");
         int myIndex = getIndex();
         double[] myLinkages = linkages[index];
         for (int othersIndex = 0; othersIndex < myLinkages.length; othersIndex++) {

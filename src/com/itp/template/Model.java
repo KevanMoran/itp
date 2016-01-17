@@ -5,6 +5,8 @@
  */
 package com.itp.template;
 
+import Answers.CSVReader;
+import static Answers.CSVReader.read;
 import com.itp.images.Area;
 import com.itp.images.Category;
 import com.itp.images.Question;
@@ -67,24 +69,25 @@ public class Model {
         DocumentBuilder db = dbf.newDocumentBuilder();
         doc = db.parse(xml);
 
-        File file = new File(fileName);
-        BufferedReader br;
-        FileReader fr = new FileReader(file);
-        br = new BufferedReader(fr);
-        String line;
-        int questionNo = 0;
-        while ((line = br.readLine()) != null) {
-            String[] split = line.split(",");
-            double score = Double.parseDouble(split[0]);
-            double sd = Double.parseDouble(split[1]);
-            Question question = questions[questionNo];
-            question.setScore(score);
-            question.setSd(sd);
-            //System.out.println(questionNo + " " + question);
-            questionNo++;
-        }
-        fr.close();
-        br.close();
+//        File file = new File(fileName);
+//        BufferedReader br;
+//        FileReader fr = new FileReader(file);
+//        br = new BufferedReader(fr);
+//        String line;
+//        int questionNo = 0;
+//        while ((line = br.readLine()) != null) {
+//            String[] split = line.split(",");
+//            double score = Double.parseDouble(split[0]);
+//            double sd = Double.parseDouble(split[1]);
+//            Question question = questions[questionNo];
+//            question.setScore(score);
+//            question.setSd(sd);
+//            //System.out.println(questionNo + " " + question);
+//            questionNo++;
+//        }
+//        fr.close();
+//        br.close();
+        CSVReader. read("c:\\itp\\Sheet_1.csv", "soltius");
         Category.setRanks();
         weekestCategory = Category.getByRank(0);
         weekestCategory.setAsWeakest();
