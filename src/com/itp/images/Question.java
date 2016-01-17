@@ -85,6 +85,25 @@ public class Question {
         sd = Math.sqrt(sumVarianceSquared) / (answers.size() - 1);
         return sd;
     }
+    
+    public int[] getDistribution() {
+        int[] distribution = new int[5];
+        for (Integer answer : answers) {
+            distribution[answer - 1]++;
+        }
+        return distribution;
+    }
+    
+    public boolean isConsensus() {
+        int maxValue = 0;
+        int[] distribution = getDistribution();
+        for (int i = 0; i < 5; i++) {
+            if (distribution[i] > maxValue) {
+                maxValue = distribution[i];
+            }
+        }
+        return maxValue * 2 > answers.size();
+    }
 
     public static Question[] getQuestions() {
         return questions;

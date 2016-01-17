@@ -55,10 +55,6 @@ public class Triangle {
         return sd;
     }
 
-    public static void adjustCoords() {
-
-    }
-
     public void draw(Graphics2D g2d) {
         if (question.isInWeakestCategory()) {
             g2d.setPaint(Color.YELLOW);
