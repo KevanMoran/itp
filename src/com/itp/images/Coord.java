@@ -12,19 +12,27 @@ import java.util.ArrayList;
  * @author Kevan
  */
 public class Coord {
-    protected int x;
-    protected int y;
-    protected int adjustedX;
-    protected int adjustedY;
-    private static final int CLOSE = 10;
-    
+
+    private int x;
+    private int y;
+    private int adjustedX;
+    private int adjustedY;
+    private boolean verticalAdjustmentOnly;
+    private static int close;
+
     private static final ArrayList<Coord> others = new ArrayList<>();
 
-    public Coord(int x, int y) {
+    public Coord(int x, int y, boolean verticalAdjustmentOnly) {
         this.x = x;
         this.y = y;
         adjustedX = x;
         adjustedY = y;
+        if (verticalAdjustmentOnly) {
+            close = 20;
+        } else {
+            close = 10;
+        }            
+        this.verticalAdjustmentOnly = verticalAdjustmentOnly;
         while (!ok()) {
             adjust();
         }
@@ -38,7 +46,7 @@ public class Coord {
     public int getAdjustedY() {
         return adjustedY;
     }
-    
+
     private boolean ok() {
         for (Coord other : others) {
             if (close(other)) {
@@ -47,24 +55,26 @@ public class Coord {
         }
         return true;
     }
-    
+
     private boolean close(Coord other) {
-        if (Math.abs(other.adjustedX - adjustedX) < CLOSE && Math.abs(other.adjustedY - adjustedY) < CLOSE) {
+        if (Math.abs(other.adjustedX - adjustedX) < close && Math.abs(other.adjustedY - adjustedY) < close) {
             return true;
         }
         return false;
     }
-    
+
     private void adjust() {
-        adjustedX += adjustment();
+        if (!verticalAdjustmentOnly) {
+            adjustedX += adjustment();
+        }
         adjustedY += adjustment();
     }
-    
-    private int adjustment()  {
+
+    private int adjustment() {
         if (Math.random() < .5) {
-            return CLOSE;
+            return close;
         } else {
-            return - CLOSE;
+            return -close;
         }
     }
 }

@@ -60,7 +60,7 @@ public class Scatter {
         for (Triangle triangle : triangles) {
             double score = triangle.getScore();
             double sd = triangle.getSD();
-            System.out.println("Score " + score + " minScore " + minScore);
+            //System.out.println("Score " + score + " minScore " + minScore);
             if (score < minScore) {
                 minScore = score;
             }
@@ -95,7 +95,7 @@ public class Scatter {
             int y = (int) Math.round(margin + (score - minScore) * scoreScale);
             y = size - y; //biggeris higher up
 
-            Coord coord = new Coord(x, y);
+            Coord coord = new Coord(x, y, triangle.getQuestion().isInWeakestCategory());
             x = coord.getAdjustedX();
             y = coord.getAdjustedY();
 

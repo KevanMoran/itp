@@ -38,7 +38,7 @@ public class Templater {
 
     public static void main(String[] args) throws FileNotFoundException, IOException, ParserConfigurationException, SAXException, XPathExpressionException {
         model = new Model(args[0]);
-        processWordTemplate();
+        processWordTemplates();
         processRadarTemplate();
         String nextFileName = getNextFileName(new File("c:\\itp"));
         zipDirectory(new File("C:\\ITP\\Template"), new File(nextFileName));
@@ -52,7 +52,7 @@ public class Templater {
         try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos))) {
             List<String> lines = Files.readAllLines(path);
             int cvAreaNumber = 0;
-            int valueAreaNumber = 0;
+//            int valueAreaNumber = 0;
             DecimalFormat twoDP = new DecimalFormat("0.00");        
             for (String line : lines) {
                 try {
@@ -75,12 +75,20 @@ public class Templater {
             }
         }
     }
+    
+    private static void processWordTemplates() throws IOException, XPathExpressionException {
+        processWordTemplate("c:\\itp\\sourcefiles\\document.xml", "c:\\itp\\template\\word\\document.xml");
+        processWordTemplate("c:\\itp\\sourcefiles\\item1.xml", "c:\\itp\\template\\customXml\\item1.xml");
+        processWordTemplate("c:\\itp\\sourcefiles\\core.xml", "c:\\itp\\template\\docProps\\core.xml");
+    }
 
-    private static void processWordTemplate() throws IOException, XPathExpressionException {
-        Path path = Paths.get("c:\\itp\\document.xml");
-        FileOutputStream fos = new FileOutputStream(new File("c:\\itp\\template\\word\\document.xml"));
+    private static void processWordTemplate(String inFile, String outFile) throws IOException, XPathExpressionException {
+//        Path path = Paths.get("c:\\itp\\document.xml");
+        //String template = "c:\\itp\\document.xml";
+        //FileOutputStream fos = new FileOutputStream(new File("c:\\itp\\template\\word\\document.xml"));
+        FileOutputStream fos = new FileOutputStream(new File(outFile));
         try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos))) {
-            List<String> lines = Files.readAllLines(path);
+            List<String> lines = Tidy.tidy(inFile);            
             lines.stream().forEach((line) -> {
                 try {
                     line = processLine(line);
@@ -95,12 +103,16 @@ public class Templater {
     }
 
     private static String processLine(String line) throws XPathExpressionException {
-
+        
         String newLine = "";
         int bra = line.indexOf("[[");
         while (bra != -1) {
             newLine += line.substring(0, bra);
             int ket = line.indexOf("]]");
+            if (ket < bra || bra + 2 > line.length()) {
+                System.out.println("Malformed " + line);
+                return "";
+            }
             String keyWord = line.substring(bra + 2, ket);
             newLine += model.replace(keyWord);
             if (line.length() == ket) {
