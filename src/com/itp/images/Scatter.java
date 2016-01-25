@@ -162,7 +162,7 @@ public class Scatter {
 
             }
         }
-        g2d.drawString("Consensus vs Non-Consensus", (int) (sdStartX + sdEndX / 3), (int) (size));
+        g2d.drawString("Consensus vs. Non-Consensus", (int) (sdStartX + sdEndX / 3), (int) (size));
         AffineTransform affineTransform = new AffineTransform();
         affineTransform.rotate(-Math.PI / 2);
         Font font = g2d.getFont();

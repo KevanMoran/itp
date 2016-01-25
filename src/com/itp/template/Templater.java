@@ -53,7 +53,7 @@ public class Templater {
             List<String> lines = Files.readAllLines(path);
             int cvAreaNumber = 0;
 //            int valueAreaNumber = 0;
-            DecimalFormat twoDP = new DecimalFormat("0.00");        
+            DecimalFormat twoDP = new DecimalFormat("0.00");
             for (String line : lines) {
                 try {
                     if (line.contains("<c:v>")) {
@@ -75,7 +75,7 @@ public class Templater {
             }
         }
     }
-    
+
     private static void processWordTemplates() throws IOException, XPathExpressionException {
         processWordTemplate("c:\\itp\\sourcefiles\\document.xml", "c:\\itp\\template\\word\\document.xml");
         processWordTemplate("c:\\itp\\sourcefiles\\item1.xml", "c:\\itp\\template\\customXml\\item1.xml");
@@ -88,7 +88,7 @@ public class Templater {
         //FileOutputStream fos = new FileOutputStream(new File("c:\\itp\\template\\word\\document.xml"));
         FileOutputStream fos = new FileOutputStream(new File(outFile));
         try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos))) {
-            List<String> lines = Tidy.tidy(inFile);            
+            List<String> lines = Tidy.tidy(inFile);
             lines.stream().forEach((line) -> {
                 try {
                     line = processLine(line);
@@ -103,7 +103,7 @@ public class Templater {
     }
 
     private static String processLine(String line) throws XPathExpressionException {
-        
+
         String newLine = "";
         int bra = line.indexOf("[[");
         while (bra != -1) {
@@ -161,12 +161,14 @@ public class Templater {
         File[] files = dir.listFiles();
         if (files != null) {
             for (File file : files) {
-                String name = file.getName();
-                if (name.startsWith(prefix)) {
-                    int dot = name.indexOf(".");
-                    int digits = Integer.parseInt(name.substring(dot - 2, dot));
-                    if (maxNo < digits) {
-                        maxNo = digits;
+                if (!file.isDirectory()) {
+                    String name = file.getName();
+                    if (name.startsWith(prefix)) {
+                        int dot = name.indexOf(".");
+                        int digits = Integer.parseInt(name.substring(dot - 2, dot));
+                        if (maxNo < digits) {
+                            maxNo = digits;
+                        }
                     }
                 }
             }

@@ -87,7 +87,7 @@ public class Model {
 //        }
 //        fr.close();
 //        br.close();
-        CSVReader. read("c:\\itp\\Sheet_1.csv", "soltius");
+        CSVReader.read("c:\\itp\\Sheet_1.csv", "soltius");
         Category.setRanks();
         weekestCategory = Category.getByRank(0);
         weekestCategory.setAsWeakest();
@@ -127,17 +127,110 @@ public class Model {
         return actions;
     }
 
-    public ArrayList<String> getResources(String category) throws XPathExpressionException {
-        ArrayList<String> resources = new ArrayList<>();
+    public String getResources(String category, int levelNumber) throws XPathExpressionException {
+        String preName
+                = "		<w:p w:rsidR=\"00ED0336\" w:rsidRPr=\"00C72BDE\" w:rsidRDefault=\"00ED0336\" w:rsidP=\"00ED0336\">\n"
+                + "            <w:pPr>\n"
+                + "                <w:rPr>\n"
+                + "                    <w:rFonts w:eastAsia=\"Times New Roman\" w:cs=\"Times New Roman\"/>\n"
+                + "                    <w:b/>\n"
+                + "                    <w:lang w:eastAsia=\"en-NZ\"/>\n"
+                + "                </w:rPr>\n"
+                + "            </w:pPr>\n"
+                + "            <w:r w:rsidRPr=\"00C72BDE\">\n"
+                + "                <w:rPr>\n"
+                + "                    <w:rFonts w:eastAsia=\"Times New Roman\" w:cs=\"Times New Roman\"/>\n"
+                + "                    <w:b/>\n"
+                + "                    <w:lang w:eastAsia=\"en-NZ\"/>\n"
+                + "                </w:rPr>\n";
+//"                <w:t>[[CategoryName];</w:t>\n";
+        String postName
+                = "            </w:r>\n"
+                + "        </w:p>\n";
+        String preNumber
+                = "        <w:p w:rsidR=\"00ED0336\" w:rsidRPr=\"00C72BDE\" w:rsidRDefault=\"00ED0336\" w:rsidP=\"00ED0336\">\n"
+                + "            <w:pPr>\n"
+                + "                <w:pStyle w:val=\"ListParagraph\"/>\n"
+                + "                <w:numPr>\n"
+                + "                    <w:ilvl w:val=\"0\"/>\n"
+                + "                    <w:numId w:val=\"7\"/>\n"
+                + "                </w:numPr>\n"
+                //                + "                <w:rPr>\n"
+                //                + "                    <w:u w:val=\"single\"/>\n"
+                //                + "                </w:rPr>\n"
+                + "            </w:pPr>\n"
+                + "            <w:r w:rsidRPr=\"00C72BDE\">\n";
+//"                <w:t>[[ReourceNumber]]</w:t>\n" +
+        String postNumber
+                = "            </w:r>\n"
+                + "        </w:p>\n";
+        String preSummary
+                = "        <w:p w:rsidR=\"00ED0336\" w:rsidRPr=\"00376967\" w:rsidRDefault=\"00ED0336\" w:rsidP=\"00ED0336\">\n"
+                + "            <w:r w:rsidRPr=\"00376967\">\n"
+                + "                <w:lastRenderedPageBreak/>\n";
+//"                <w:t xml:space=\"preserve\">[[ResourceSummary]]</w:t>\n" +
+        String postSummary
+                = "            </w:r>\n"
+                + "        </w:p>\n";
+        String preLink
+                = "        <w:p w:rsidR=\"00ED0336\" w:rsidRPr=\"00376967\" w:rsidRDefault=\"003D3902\" w:rsidP=\"00ED0336\">\n"
+                //                + "            <w:hyperlink r:id=\"rId19\" w:tgtFrame=\"_blank\" w:history=\"1\">\n"
+                + "            <w:hyperlink w:tgtFrame=\"_blank\" w:history=\"1\">\n"
+                + "                <w:r w:rsidR=\"00ED0336\" w:rsidRPr=\"00376967\">\n"
+                + "                    <w:rPr>\n"
+                + "                        <w:rStyle w:val=\"Hyperlink\"/>\n"
+                + "                    </w:rPr>\n";
+//                + "                    <w:t>[[ResourceLink]]</w:t>\n"
+        String postLink
+                = "                </w:r>\n"
+                + "            </w:hyperlink>\n"
+                + "        </w:p>\n";
+        String openWT
+                = "        <w:p w:rsidR=\"00482751\" w:rsidRPr=\"003A6782\" w:rsidRDefault=\"00482751\" w:rsidP=\"00482751\">\n"
+                + "            <w:pPr>\n"
+                + "                <w:rPr>\n"
+                + "                    <w:rFonts w:ascii=\"Arial\" w:hAnsi=\"Arial\" w:cs=\"Arial\"/>\n"
+                + "                    <w:color w:val=\"000000\"/>\n"
+                + "                    <w:sz w:val=\"20\"/>\n"
+                + "                    <w:szCs w:val=\"20\"/>\n"
+                + "                </w:rPr>\n"
+                + "            </w:pPr>\n"
+                + "            <w:r>\n"
+                + "                <w:rPr>\n"
+                + "                    <w:rFonts w:eastAsia=\"Times New Roman\" w:cs=\"Times New Roman\"/>\n"
+                + "                    <w:b/>\n"
+                + "                    <w:lang w:eastAsia=\"en-NZ\"/>\n"
+                + "                </w:rPr>\n"
+                + "                <w:t>";
+        String result = ""; //<!-- Resources Insert-->\n";
+        result += category + "</w:t>\n";
+        result += postName;
+
+        String levelName = Level.levelNames[levelNumber];
         XPath xPath = XPathFactory.newInstance().newXPath();
-        String x = "//categories/category[name = '" + category + "']/Resources/Resource";
+        String x = "//categories/category[name = '" + category + "']/levels/level[name = '" + levelName + "']/resources/resource";
         NodeList nodes = (NodeList) xPath.evaluate(x, doc.getDocumentElement(), XPathConstants.NODESET);
+        System.out.println(category + " / " + levelName);
         for (int i = 0; i < nodes.getLength(); i++) {
-            Element e = (Element) nodes.item(i);
-            String text = e.getTextContent();
-            resources.add(text);
+            Element node = (Element) nodes.item(i);
+            NodeList childNodes = node.getChildNodes();
+            Element summaryNode = (Element) childNodes.item(1);
+            String summary = summaryNode.getTextContent();
+            Element linkNode = (Element) childNodes.item(3);
+            String link = linkNode.getTextContent();
+            result += preNumber;
+            result += "                <w:t>" + category + " Resource " + (i + 1) + "</w:t>\n";
+            result += postNumber;
+            result += preSummary;
+            result += "                <w:t xml:space=\"preserve\">" + summary + "</w:t>\n";
+            result += postSummary;
+            result += preLink;
+            result += "                    <w:t>" + link + "</w:t>\n";
+            result += postLink;
         }
-        return resources;
+        result += openWT;
+
+        return result;
     }
 
     public String getWikiDesc(int levelNumber) throws XPathExpressionException {
@@ -266,10 +359,6 @@ public class Model {
                 return noDP.format(Math.round(Category.getByRank(0).getScore()) + 1);
             case "1stWeekestCategoryNextLevelName":
                 return Level.levelNames[(int) Math.round(Category.getByRank(0).getScore()) + 1];
-            case "1stWeekestCategoryActionResourceLine":
-                resources = getResources(weekestCategory.getName());
-                replacement = toBullets(resources);
-                return replacement;
             case "1stWeekestCategoryCharacteristicLine":
                 characteristics = getCharacteristics(weekestCategory.getName(), (int) Math.round(weekestCategory.getScore()));
                 replacement = toBullets(characteristics);
@@ -362,6 +451,21 @@ public class Model {
                 return Category.getCategory(11).getHeatMapColor();
             case "HeatMapValue12":
                 return oneDP.format(Category.getCategory(11).getScore());
+            case "LeadershipScore":
+                return oneDP.format(Category.getCategory(9).getScore());
+            case "1stWeekestCategoryQuestions":
+                ArrayList<Question> questions = weekestCategory.getQuestions();
+                ArrayList<String> questionsText = new ArrayList<>();
+                for (Question question : questions) {
+                    questionsText.add("Q" + question.getNumber() + ":" + question.getText());
+                }
+                return toBullets(questionsText);
+            case "WeekestCategoryResources":
+                return getResources(weekestCategory.getName(), (int) Math.round(weekestCategory.getScore()));
+            case "SecondaryCategory1Resources":
+                return getResources(secondary1.getName(), (int) Math.round(secondary1.getScore()));
+            case "SecondaryCategory2Resources":
+                return getResources(secondary2.getName(), (int) Math.round(secondary2.getScore()));
             default:
                 return "[[Couldn't find replacement for '" + keyWord + "']]";
         }
@@ -375,7 +479,7 @@ public class Model {
                 + "        <w:pStyle w:val=\"ListParagraph\"/>\n"
                 + "        <w:numPr>\n"
                 + "            <w:ilvl w:val=\"0\"/>\n"
-                + "            <w:numId w:val=\"38\"/>\n"
+                + "            <w:numId w:val=\"7\"/>\n"
                 + "        </w:numPr>\n"
                 + "    </w:pPr>\n"
                 + "    <w:r>\n"
