@@ -6,6 +6,8 @@
 package com.itp.template;
 
 import com.itp.images.Area;
+import com.itp.images.Question;
+import com.itp.images.Scatter;
 import com.itp.images.Wheel;
 import java.io.BufferedWriter;
 import java.io.File;
@@ -40,14 +42,21 @@ public class Templater {
         model = new Model(args[0]);
         processWordTemplates();
         processRadarTemplate();
+        processScatterDiagram();
         String nextFileName = getNextFileName(new File("c:\\itp"));
         zipDirectory(new File("C:\\ITP\\Template"), new File(nextFileName));
         Runtime.getRuntime().exec(FindWord.findWord() + " " + nextFileName);
     }
+    
+    public static void processScatterDiagram() throws IOException{
+        Question[] questions = Question.getQuestions();
+        Scatter scatter = new Scatter(questions);
+        scatter.drawAndWrite("C:\\ITP\\Template\\word\\media\\image5.jpeg");
+    }
 
     private static void processRadarTemplate() throws FileNotFoundException, IOException {
         ArrayList<Area> areas = Wheel.getAreas();
-        Path path = Paths.get("c:\\itp\\chart1.xml");
+        Path path = Paths.get("c:\\itp\\sourcefiles\\chart1.xml");
         FileOutputStream fos = new FileOutputStream(new File("c:\\itp\\template\\word\\charts\\chart1.xml"));
         try (BufferedWriter bw = new BufferedWriter(new OutputStreamWriter(fos))) {
             List<String> lines = Files.readAllLines(path);
@@ -75,6 +84,8 @@ public class Templater {
             }
         }
     }
+    
+    
 
     private static void processWordTemplates() throws IOException, XPathExpressionException {
         processWordTemplate("c:\\itp\\sourcefiles\\document.xml", "c:\\itp\\template\\word\\document.xml");

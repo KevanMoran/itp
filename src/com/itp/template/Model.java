@@ -54,6 +54,8 @@ public class Model {
     private Category weekestCategory;
     private Category secondary1;
     private Category secondary2;
+    
+    
 
     public Model(String fileName) throws ParserConfigurationException, SAXException, IOException {
 //        this.primaryCategoryName = primaryCategory;
@@ -87,14 +89,14 @@ public class Model {
 //        }
 //        fr.close();
 //        br.close();
-        CSVReader.read("c:\\itp\\Sheet_1.csv", "soltius");
+        CSVReader.read("c:\\itp\\Sheet_1.csv", "Wayne.Voss@aucklandnz.com");
         Category.setRanks();
         weekestCategory = Category.getByRank(0);
         weekestCategory.setAsWeakest();
         secondary1 = Category.getCategory(weekestCategory.getSecondary1index());
         secondary2 = Category.getCategory(weekestCategory.getSecondary2index());
         Scatter scatter = new Scatter(questions);
-        scatter.drawAndWrite("C:\\ITP\\Template\\word\\media\\image3.jpeg");
+        scatter.drawAndWrite("C:\\ITP\\Template\\word\\media\\image5.jpeg");
     }
 
 //    expect a csv
@@ -210,7 +212,7 @@ public class Model {
         XPath xPath = XPathFactory.newInstance().newXPath();
         String x = "//categories/category[name = '" + category + "']/levels/level[name = '" + levelName + "']/resources/resource";
         NodeList nodes = (NodeList) xPath.evaluate(x, doc.getDocumentElement(), XPathConstants.NODESET);
-        System.out.println(category + " / " + levelName);
+        //System.out.println(category + " / " + levelName);
         for (int i = 0; i < nodes.getLength(); i++) {
             Element node = (Element) nodes.item(i);
             NodeList childNodes = node.getChildNodes();
@@ -404,6 +406,8 @@ public class Model {
                 replacement = toBullets(actions);
                 return replacement;
             case "HeatMapColor1":
+                //<w:shd w:val="clear" w:color="000000" w:fill="auto"/>
+                //<w:shd w:val="clear" w:color="000000" w:fill="[[HeatMapColor1]]"/>
                 return Category.getCategory(0).getHeatMapColor();
             case "HeatMapValue1":
                 return oneDP.format(Category.getCategory(0).getScore());
@@ -457,7 +461,7 @@ public class Model {
                 ArrayList<Question> questions = weekestCategory.getQuestions();
                 ArrayList<String> questionsText = new ArrayList<>();
                 for (Question question : questions) {
-                    questionsText.add("Q" + question.getNumber() + ":" + question.getText());
+                    questionsText.add("Q" + question.getNumber() + ": " + question.getText());
                 }
                 return toBullets(questionsText);
             case "WeekestCategoryResources":

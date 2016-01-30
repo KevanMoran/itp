@@ -58,12 +58,12 @@ public class Triangle {
     public void draw(Graphics2D g2d) {
         if (question.isInWeakestCategory()) {
             g2d.setPaint(Color.YELLOW);
-            Ellipse2D.Double circle = new Ellipse2D.Double(x - 5, y - 15, 20, 20);
+            Ellipse2D.Double circle = new Ellipse2D.Double(x - 5, y - 20, 30, 25);
             g2d.draw(circle);
-            //g2d.fill(circle);
+            g2d.fill(circle);
             g2d.setColor(Color.BLACK);
             Font font = g2d.getFont();
-            Font boldFont = font.deriveFont(Font.BOLD, 9);
+            Font boldFont = font.deriveFont(Font.BOLD, 14);
             g2d.setFont(boldFont);
             g2d.drawString("Q" + question.getNumber(), x, y);
             g2d.setFont(font);

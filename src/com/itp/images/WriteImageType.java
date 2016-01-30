@@ -5,10 +5,8 @@
  */
 package com.itp.images;
 
-import java.awt.BasicStroke;
 import java.awt.Color;
 import java.awt.Graphics2D;
-import java.awt.geom.Arc2D;
 import java.awt.image.BufferedImage;
 import java.io.BufferedReader;
 import java.io.File;
@@ -49,7 +47,7 @@ public class WriteImageType {
             }
             br.close();
             fr.close();
-            scatter.drawAndWrite("C:\\ITP\\Template\\word\\media\\image3.jpeg");
+            scatter.drawAndWrite("C:\\ITP\\Template\\word\\media\\image5.jpeg");
 
         } catch (IOException ie) {
             ie.printStackTrace();

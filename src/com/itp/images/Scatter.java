@@ -47,6 +47,7 @@ public class Scatter {
         g2d.setPaint(Color.WHITE);
         g2d.fillRect(0, 0, size, size);
         for (Question question : questions) {
+            //System.out.println(question);
             Triangle triangle = new Triangle(question);
             addTriangle(triangle);
         }

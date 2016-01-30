@@ -17,25 +17,26 @@ public class Coord {
     private int y;
     private int adjustedX;
     private int adjustedY;
-    private boolean verticalAdjustmentOnly;
+    private boolean bigSpacing;
     private static int close;
 
     private static final ArrayList<Coord> others = new ArrayList<>();
 
-    public Coord(int x, int y, boolean verticalAdjustmentOnly) {
+    public Coord(int x, int y, boolean bigSpacing) {
         this.x = x;
         this.y = y;
         adjustedX = x;
         adjustedY = y;
-        if (verticalAdjustmentOnly) {
-            close = 20;
+        if (bigSpacing) {
+            close = 15;
         } else {
-            close = 10;
-        }            
-        this.verticalAdjustmentOnly = verticalAdjustmentOnly;
+            close = 5;
+        }
+        this.bigSpacing = bigSpacing;
         while (!ok()) {
             adjust();
         }
+        //System.out.println(x + " " + y + " " + adjustedX + " " + adjustedY);
         others.add(this);
     }
 
@@ -49,7 +50,9 @@ public class Coord {
 
     private boolean ok() {
         for (Coord other : others) {
-            if (close(other)) {
+            boolean sameType = this.bigSpacing == other.bigSpacing;
+            //System.out.println("sameType: " + sameType);
+            if (sameType && close(other)) {
                 return false;
             }
         }
@@ -64,9 +67,7 @@ public class Coord {
     }
 
     private void adjust() {
-        if (!verticalAdjustmentOnly) {
-            adjustedX += adjustment();
-        }
+        adjustedX += adjustment();
         adjustedY += adjustment();
     }
 
