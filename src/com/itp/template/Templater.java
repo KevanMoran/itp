@@ -39,7 +39,7 @@ public class Templater {
     private static Model model;
 
     public static void main(String[] args) throws FileNotFoundException, IOException, ParserConfigurationException, SAXException, XPathExpressionException {
-        model = new Model(args[0]);
+        model = new Model(args[0], args[1], args[2]);
         processWordTemplates();
         processRadarTemplate();
         processScatterDiagram();

@@ -17,7 +17,7 @@ public class Level {
         "Ad-Hoc",
         "Repeatable",
         "Defined",
-        "Manaaged",
+        "Managed",
         "Optimising"
     };
     

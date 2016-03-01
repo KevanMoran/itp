@@ -54,16 +54,18 @@ public class Model {
     private Category weekestCategory;
     private Category secondary1;
     private Category secondary2;
+    private String organisationName;
     
     
 
-    public Model(String fileName) throws ParserConfigurationException, SAXException, IOException {
+    public Model(String fileName, String domainName, String companyName) throws ParserConfigurationException, SAXException, IOException {
 //        this.primaryCategoryName = primaryCategory;
 //        this.primaryCategoryLevel = primaryCategoryLevel;
 //        this.secondaryCategory1Name = secondaryCategory1;
 //        this.secondaryCategory1Level = secondaryCategory1Level;
 //        this.secondaryCategory2Name = secondaryCategory2;
 //        this.secondaryCategory2Level = secondaryCategory2Level;
+        this.organisationName = companyName;
         Question[] questions = Question.getQuestions();
 
         File xml = new File("c:\\itp\\model.xml");
@@ -89,7 +91,7 @@ public class Model {
 //        }
 //        fr.close();
 //        br.close();
-        CSVReader.read("c:\\itp\\Sheet_1.csv", "Wayne.Voss@aucklandnz.com");
+        CSVReader.read(fileName, domainName);
         Category.setRanks();
         weekestCategory = Category.getByRank(0);
         weekestCategory.setAsWeakest();
@@ -264,11 +266,11 @@ public class Model {
         DecimalFormat noDP = new DecimalFormat("0");
         ArrayList<String> characteristics;
         ArrayList<String> actions;
-        ArrayList<String> resources;
+
         double score = 0;
         switch (keyWord) {
             case "OrganisationName":
-                return "Some Company";
+                return organisationName;
             case "OverallLevelScore":
                 for (Structure structure : structures) {
                     score = +structure.getScore();

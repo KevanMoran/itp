@@ -134,7 +134,7 @@ public class Scatter {
         g2d.setPaint(Color.BLACK);
         g2d.drawLine(sdStartX, sdY, sdEndX, sdY);
         for (double tick = 0; tick < maxSD + .1; tick += .1) {
-            if (tick > minSD) {
+            //if (tick > minSD) {
                 int tickTop = (int) Math.round(size - margin);
                 int tickBottom = (int) Math.round(size - margin / 2);
                 int tickX = (int) Math.round(sdStartX + margin / 2 + sdScale * tick);
@@ -142,7 +142,7 @@ public class Scatter {
                 DecimalFormat decimalFormat = new DecimalFormat("0.0");
                 String label = decimalFormat.format(tick);
                 g2d.drawString(label, tickX, (int) Math.round(size - margin / 4));
-            }
+            //}
         }
         int scoreStartX = (int) Math.round(margin / 2);
         int scoreEndX = scoreStartX;

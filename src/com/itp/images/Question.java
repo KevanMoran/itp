@@ -166,15 +166,15 @@ public class Question {
         category = Category.getCategory(index++);
         question = new Question("How is innovation measured and monitored?", 38, category);
         question = new Question("How is the innovation model adapted and improved?", 39, category);
-        question = new Question("How are innovation processes & management practices benchmarked?", 40, category);
+        question = new Question("How are innovation processes &amp; management practices benchmarked?", 40, category);
 
         category = Category.getCategory(index++);
-        question = new Question("How effectively are customers, suppliers & other stakeholders involved in the innovation process?", 4, category);
+        question = new Question("How effectively are customers, suppliers &amp; other stakeholders involved in the innovation process?", 4, category);
         question = new Question("What approach is used for innovation planning and co-ordination?", 10, category);
         question = new Question("What is the state of collaboration and networking internally?", 24, category);
         question = new Question("What is the state of collaboration and networking with external parties?", 25, category);
         question = new Question("Has an innovation strategy been established and communicated?", 26, category);
-        question = new Question("What is the level of organisational support for practices & procedures that drive innovation?", 30, category);
+        question = new Question("What is the level of organisational support for practices &amp; procedures that drive innovation?", 30, category);
 
         category = Category.getCategory(index++);
         question = new Question("How are uncertainties and risks managed and reduced?", 13, category);

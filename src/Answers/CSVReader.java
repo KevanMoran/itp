@@ -27,8 +27,8 @@ public class CSVReader {
         String line;
         int answer1 = 9;
         while ((line = br.readLine()) != null) {
-            if (line.contains(domainName)) {
                 String[] bits = line.split(",");
+                if (line.contains(domainName)) {
                 for (int questionNo=0; questionNo<40; questionNo++) {
                     Integer answer = Integer.parseInt(bits[answer1 + questionNo]);
                     questions[questionNo].addAnswer(answer);
@@ -41,6 +41,6 @@ public class CSVReader {
     }
     
     public static void main(String[] args) throws IOException {
-        read("c:\\itp\\Sheet_1.csv", "soltius");
+        read("c:\\itp\\Sheet_1.csv", "nkearns@unitec.ac.nz");
     }
 }
